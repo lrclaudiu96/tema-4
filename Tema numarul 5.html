@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formular de aplicare</title>
+</head>
+<body>
+    <h1>Formular de Angajare</h1>
+    <hr>
+    
+    <form>
+        <fieldset>
+            <legend>Personal dates:</legend>        
+            <label for="fname">Numele:</label>
+                <input type="text" id="fname" name="fname"><br><br>   
+            <label for="lname">Prenumele:</label>
+                <input type="text" id="lname" name="lname"><br><br>
+            <label for="birthday">Zi de nastere:</label>
+                <input type="date" id="birthday" name="birthday"><br><br>
+                <input type="submit" value="Submit"><br><br>
+            <label for="age">Varsta:</label>
+                <input type="number" id="age" name="age" min="1" max="99" step="2" value="18"> 
+                <input type="reset" value="Sterge datele"><br><br>
+            <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+            <label for="phone">Numarul de telefon:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">    
+        </fieldset>
+    </form>
+    <br>
+    <form action="">
+        <fieldset>
+            <legend>Adresa:</legend>
+            <label for="county">Judetul:</label>
+                <select name="county" id="county" size="1" multiple>
+                    <option value="disabled selected">Alege judetul</option>
+                    <option value="bucuresti">Bucuresti</option>
+                    <option value="arad">Arad</option>
+                    <option value="timisoara">Timis</option>
+                    <option value="oradea">Bihor</option>
+                    <option value="hunedoara">Hunedoara</option>
+                    <option value="mehedinti">Mehedinti</option>
+                    <option value="targu_jiu">Gorj</option>
+                    <option value="maramures">Maramures</option>
+               </select>
+               <label for="county">Oras:</label>
+                <select name="city" id="city">
+                    <option value="disabled selected">Alege Orasul</option>
+                    <option value="bucuresti">Bucuresti</option>
+                    <option value="arad">Zadareni</option>
+                    <option value="timisoara">Bucovat</option>
+                    <option value="oradea">Cihei</option>
+                    <option value="hunedoara">Calan</option>
+                    <option value="mehedinti">Orsova</option>
+                    <option value="gorj">Bustuchini</option>
+                    <option value="maramures">Maramures</option>
+               </select>
+               
+            <label for="city">Strada:</label>    
+                <input type="text" id="street" name="street" placeholder="strada..."  required>
+            <label for="city">Numarul:</label>    
+                <input type="text" id="street_number" name="street_number" placeholder="strada x , nr. y" required>
+            <label for="city">Blocul:</label>    
+                <input type="text" id="building_number" name="building_number" placeholder="blocul..." required>
+            <label for="city">Scara:</label>    
+                <input type="text" id="staircase" name="staircase" placeholder="scara..." required>
+            <label for="city">Etajul:</label>    
+                <input type="text" id="floor" name="floor" placeholder="etajul..." disabled>
+            <label for="city">Codul postal:</label>    
+                <input type="text" id="postal_code" name="postal_code" placeholder="codul postal..." required>
+            </fieldset>
+    </form><br>
+
+        <form action="">
+            <fieldset>
+                <legend>Informatii privind experienta profesionala:</legend>
+                    <label for="Experienta profesionala in domeniu:">
+                        <form>   
+                        <input type="radio" id="junior" name="experienta" value="JUNIOR">
+                            <label for="junior">0 > 2 ani</label>
+                            <br>
+                        <input type="radio" id="mid" name="experienta" value="MID" checked>
+                            <label for="mid">2 > 5 ani</label>
+                            <br>
+                        <input type="radio" id="senior" name="experienta" value="SENIOR">
+                            <label for="senior">5 > 10+ ani</label>
+                        <br><br>
+                    
+                    <label for="myfile">Selecteaza un fisier:</label>              <!--Poti incarca un fike-->
+                    <input type="file"  id="myfile" name="myfile"><br>
+                    <input type="image" src="download.jpg" alt="Submit" width="70" height="70" onclick="alert('Fisierul tau a fost inregistrat cu succes!')">
+
+                    <p style="font-size:15px ;">Posturi disponibile</p>
+                    <label for="cars">Alege un domeniu :</label>
+                        <select name="front" id="front">          
+                            <optgroup label="Front-END">
+                                <option value="volvo">QA testing</option>
+                                <option value="saab">Web Design</option>
+                            </optgroup>
+                            <optgroup label="Mid-END">
+                                <option value="mercedes">Data Base </option>
+                                <option value="audi">Relatii cu clientii</option>
+                            </optgroup>
+                            <optgroup label="Back-END">
+                                <option value="">SQL maintenance</option>
+                                <option value="">Programare Ruby</option>
+                                <input type="submit" id="submit">
+                            </optgroup>
+                        </select>
+                        
+                        <br><br>
+                        
+                    <label for="text">Unde ai mai lucrat:</label><br>
+                    <label for="bdaymounth">Perioada:</label>
+                        <input type="month" id="period" name="period">     
+                        <input type="ex_firm" id="ex_firm"  placeholder="Ex-firma">
+                        <input type="month" id="period" name="period">
+                        <br> 
+                    <label for="bdaymounth">Perioada:</label>
+                        <input type="month" id="period" name="period"> 
+                        <input type="ex_firm" id="ex_firm"  placeholder="Ex-firma">
+                        <input type="month" id="period" name="period">
+                        <br>
+                    <label for="bdaymounth">Perioada:</label>
+                        <input type="month" id="period" name="period">         
+                        <input type="ex_firm" id="ex_firm"  placeholder="Ex-firma">
+                        <input type="month" id="period" name="period">
+                        <br>
+                          
+
+
+            </fieldset>
+        </form>
+
+        <p>Confirma ca toate datele au fost introduse corect</p>
+        <form action="">
+            <label for="submit">Confirma</label> <br>
+            <input type="image" src="1.png" alt="submit" width="70" height="20" onclick="alert('Multumim de confirmare!!!')">
+        </form required>
+    
+</body>
+</html>
